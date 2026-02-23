@@ -1,0 +1,77 @@
+1.	Scenario: A program needs to find the second largest number in a given list of numbers.
+ Write logic to find the second largest number in a given list.
+
+       ->Initialize two variables
+       ->Traverse list, if current  number greater than first assign first to second and current     number to first.Else if current number is greater than second number and not equal to first,Assign current number to second variable
+       ->Return second
+
+
+2.	Scenario: A function needs to convert an integer to its binary representation without using Python’s built-in bin() function.
+ Write logic to convert a given integer to its binary representation.
+
+->Divide the number by 2
+->store the remainder 
+->Repeat until number becomes 0
+->Reverse the collected remainders
+
+3.	Scenario: A function needs to merge two sorted lists into a single sorted list efficiently.
+ Write logic to merge two sorted lists into one sorted list.
+->Use two pointers I and j
+->Compare elements from both lists
+->add smaller elements at the end 
+->move pointer
+-> add remaining elements at the end
+
+4.	Scenario: A function needs to find the first non-repeating character in a string for text processing.
+ Write logic to find the first non-repeating character in a given string.
+
+->Count frequency of each character
+->Traverse string again
+->first character with count =1 and return it.
+
+5.	Scenario: A program needs to identify common elements between two lists for data filtering.
+ Write logic to find the common elements between two lists.
+
+->Convert lists to sets
+-> use intersections
+
+6.	Scenario: A function is required to reverse a given number.
+ Write logic to reverse a given number.
+
+->initialize reverse=0
+-> while number>0
+->Get last digit equal to n%10
+-> Add to reverse
+->remove last digit
+->return reverse
+
+7.	Scenario: A program needs to count the number of words in a given sentence.
+ Write logic to count the number of words in a given sentence.
+
+->use split() to split string by space
+->count length of result list
+
+8.	Scenario: A function needs to compute the factorial of a number using iteration instead of recursion.
+ Write logic to find the factorial of a given number using iteration.
+
+->if n==0 or 1 return 1
+-> initialize result to 1
+->in loop , multiply result by i
+Return result
+
+9.	Scenario: A program is required to convert all strings in a list to uppercase.
+ Write logic to convert all strings in a list to uppercase.
+
+	Create empty result list
+	Loop through each string
+	Use upper ()
+	Append to result
+
+10.	Scenario: A function is needed to compute the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.
+ Write logic to calculate the GCD of two numbers using the Euclidean algorithm.
+
+->whileb!=0
+Temp=b
+b=a%b
+a=temp
+->when b is 0 then a is gcd
